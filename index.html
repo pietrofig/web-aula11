@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercício de Formulário</title>
+    </head>
+
+    <body>
+    <link rel="stylesheet" type="text/css" href="estilo.css">        
+        <h2> Preencha os dados para finalizar a compra</h2>
+            <form>
+            <fieldset>
+                  <legend> Dados pessoais:</legend>
+            <div>
+                      <label class="dado" for="nome">Nome Completo: </label>
+                      <input id="nome" type="text" name="nome" size="50" required >
+            </div>
+            <div>
+                  <label class="dado" for="data">Data de Nascimento: </label>
+                  <input id="data" type="date" name="data" size="50" required >
+            </div>
+            <div>
+                <label class="dado" for="cpf">CPF: </label>
+                <input id="cpf" type="number" size="15" name="cpf" required >
+            </div>
+            <div>
+              <label class="dado" for="nome">E-mail: </label>
+              <input id="nome" type="email" name="email" size="50" required >
+          </div>
+          <div>
+            Sexo:<br>
+            <label class="dado" for="masc">Masculino</label>
+            <input type="radio" id="masc" name="genero" value="masculino">
+            <br><label class="dado" for="femi">Feminino</label>            
+            <input type="radio" id="femi" name="genero" value="feminino">
+            <br><label class="dado" for="nao">Prefiro não dizer</label>
+            <input type="radio" id="nao" name="genero" value="outro">
+          </div>
+            </fieldset>
+
+            <fieldset>
+                <legend> Dados para entrega: </legend>
+                    <div>
+                        <label class="dado" for="endereco">Endereço: </label>
+                        <input id="endereco" type="text" name="endereco" size="50" required >
+                        <label for="num">   Nº: </label>
+                        <input id="num" type="number" name="num" size="15" required >
+                        <label for="cep">   CEP: </label>
+                        <input id="cep" type="number" name="cep" size="15" required >
+                    </div>
+                    <div>
+                        <label class="dado" for="cidade">Cidade: </label>
+                        <input id="cidade" type="text" name="cidade" size="50" required >
+                    </div>
+                    <div>
+                        <label class="dado" for="nome">Estado: </label>
+                        <input id="estado" type="text" name="estado" size="50" required >
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend> Finalizando</legend>
+                        <label class="dado" for="termo"> Aceito os termos do site.</label>
+                        <input type="checkbox" name="termo" value="contrato" required><br>
+                        <label class="dado" for="promo"> Receber e-mails com promoções</label>
+                        <input type="checkbox" name="promo" value="promocao"><br><br>   
+                        <input type="submit" value="Enviar">                        
+        
+            </form>
+                      
+    </body>
+
+</html>
