@@ -1,15 +1,42 @@
-label.dado {
+/* label.dado {
 
     display: inline-block;
     width: 150px;
 }
-
 h2{
     text-align: center;
 }
 body {
     background-color: lightblue;
   }
+
+*/
+body{
+    font-size: 32px;
+    margin: 0;
+
+}
+.frase1, .frase2, .referencia{
+    text-align: left;
+    width: 500px;
+    background-color: yellow;
+}
+p{
+    margin: 10px;
+}
+.referencia{
+    background-color: pink;
+    height: 20px;
+}
+.frase1{
+    border: 3px solid red;
+    padding: 20px;
+}
+.frase2{
+    box-sizing: border-box;
+    border: 3px solid red;
+    padding: 20px;
+}
 
 
 
